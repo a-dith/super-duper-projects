@@ -3,6 +3,8 @@
 
 #!/usr/bin/bash
 
+ext=`echo $1 | sed 's/.*\.\(.*\)/\1/'`
+
 # check to ensure that the correct number of command-line arguments is provided.
 # If not, the script displays the correct usage and exits.
 if [ $# -ne 1 ]; then
@@ -14,7 +16,11 @@ fi
 
 # Check if file is present
 if [ ! -f "$PWD/$1" ]; then
-    echo -e "# A Program for\n\n#!/usr/bin/bash\n\n# Set the shell option to exit immediately if any command exits with a non-zero status\nset -e" > ""$1""
+    if [ $ext = "sh" ]; then
+        echo -e "# A Program for\n\n#!/usr/bin/bash\n\n# Set the shell option to exit immediately if any command exits with a non-zero status\nset -e" > ""$1""
+    elif [ $ext = "py" ]; then
+        echo -e "# A Program for\n\n#!/usr/bin/python\n\n" > $1
+    fi
 fi
 
 # Check if file is executable
