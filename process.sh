@@ -3,7 +3,7 @@
 #!/bin/bash
 set -e
 
-folder_name="/home/e15/Downloads/"
+folder_name="$HOME/Downloads/"
 dmenu_options="-i -l 20 -nb black -nf white -sb dodgerblue -sf white -fn 'Monospace-12'"
 
 select_destination_folder() {
