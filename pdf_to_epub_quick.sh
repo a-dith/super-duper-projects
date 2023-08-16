@@ -7,10 +7,11 @@ mkdir temp
 for i in *pdf ; do
 
     pdftk "$i" cat 2-end output "temp/$i"
-    # Use pdftk to concatenate the pages 2 to the end of the PDF file ('$i') and save the output in the 'temp' directory.
+    # Use pdftk to concatenate the pages 2 to last page of the PDF file ('$i') and save the output in the 'temp' directory.
 
     pdfimages -l 1 -j "$i" "temp/${i%.pdf}"
     # Extract images from the first page (specified by '-l 1') of the PDF file and save them in the 'temp' directory using the same base filename as the original PDF.
+    # to be used as the cover page
 
 done
 
