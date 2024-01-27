@@ -2,7 +2,7 @@
 
 # Step 1: Install NTP
 echo "Installing NTP..."
-sudo pacman -S ntp
+sudo pacman -S --noconfirm ntp
 
 # Step 2: Turn on NTP
 echo "Enabling NTP..."
