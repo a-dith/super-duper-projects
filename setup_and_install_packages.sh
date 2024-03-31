@@ -21,7 +21,7 @@ echo "Updating and upgrading..."
 sudo pacman -Syyu
 
 # Install additional packages
-packages=("fzf" "curl" "jq" "ffmpeg" "tree" "imagemagick" "renameutils" "xclip" "tldr" "xdotool" "mpv" "variety" "viewnior" "dmenu" "aria2" "yt-dlp" "sxhkd" "sxiv" "pcmanfm" "xdman")
+packages=("fzf" "curl" "jq" "ffmpeg" "tree" "imagemagick" "renameutils" "xclip" "tldr" "xdotool" "mpv" "variety" "viewnior" "dmenu" "aria2" "yt-dlp" "sxhkd" "sxiv" "pcmanfm" "xdman" "gnome-disk-utility" "pdftk" "tidy" "pandoc" )
 
 # Install packages
 for package in "${packages[@]}"; do
