@@ -31,5 +31,27 @@ done
 
 echo "Package installation completed."
 
+# installing piper tts
+cd ~
+wget https://github.com/rhasspy/piper/releases/download/v1.2.0/piper_amd64.tar.gz
+# extract (will be in piper folder)
+tar -xvzf  piper*.gz
+# go to folder
+cd piper/
+# get the language and supporting json
+wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/medium/en_US-lessac-medium.onnx.json
+wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/medium/en_US-lessac-medium.onnx
+# remove the compressed file
+rm ~/piper*.gz
+
 # installing xtreme download manager
 wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz && tar xf xdm-setup-7.2.11.tar.xz && chmod a+x ./install.sh && su -c ./install.sh && echo "finished installing xtreme download manager"
+
+
+# firefox dark reader
+firefox https://darkreader.org/
+# firefox OLED theme (dark)
+firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
+
+# install appimage manager
+wget https://raw.githubusercontent.com/ivan-hc/AM/main/INSTALL && chmod a+x ./INSTALL && sudo ./INSTALL
