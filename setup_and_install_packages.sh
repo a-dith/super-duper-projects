@@ -54,6 +54,9 @@ rm xdm-se*.tar.xz readme.txt install.sh
 firefox https://darkreader.org/
 # firefox OLED theme (dark)
 firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
+# online keyboard tester
+firefox "https://shawon9324.github.io/apps/keytester/"
+
 
 # install appimage manager
 wget https://raw.githubusercontent.com/ivan-hc/AM/main/INSTALL && chmod a+x ./INSTALL && sudo ./INSTALL
