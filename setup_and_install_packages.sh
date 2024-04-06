@@ -33,6 +33,7 @@ echo "Package installation completed."
 
 # installing piper tts
 cd ~
+echo "installing piper TTS..."
 wget https://github.com/rhasspy/piper/releases/download/v1.2.0/piper_amd64.tar.gz
 # extract (will be in piper folder)
 tar -xvzf  piper*.gz
@@ -44,9 +45,10 @@ wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/
 # remove the compressed file
 rm ~/piper*.gz
 
+cd ~
 # installing xtreme download manager
-wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz && tar xf xdm-setup-7.2.11.tar.xz && chmod a+x ./install.sh && su -c ./install.sh && echo "finished installing xtreme download manager"
-
+echo "installing xtreme download manager..." && wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz && tar xf xdm-setup-7.2.11.tar.xz && chmod a+x ./install.sh && su -c ./install.sh 
+rm xdm-se*.tar.xz readme.txt install.sh
 
 # firefox dark reader
 firefox https://darkreader.org/
