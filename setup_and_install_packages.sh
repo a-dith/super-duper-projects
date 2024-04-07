@@ -61,15 +61,9 @@ firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?ut
 # online keyboard tester
 firefox "https://shawon9324.github.io/apps/keytester/"
 
-# keyboard shortcuts
-# win + q  => clip board
-xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>q' -n -t string -s 'xfce4-clipman-history'
-# win + t  => terminal
-xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>t' -n -t string -s 'xfce4-terminal'
+
 # Xfce panel can be set to Always hidden with this command: 
 xfconf-query -c xfce4-panel -p /panels/panel-0/autohide-behavior -t uint -s 2 
-# add taskmanager to ctrl+shift+esc 
-xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Primary><Shift>Escape' -n -t string -s 'xfce4-taskmanager'
 # set terminal transparency
 xfconf-query -c xfce4-terminal -p /background-darkness -s .65
 # for dark theme
@@ -81,3 +75,16 @@ xfconf-query -c xsettings -p  '/Net/ThemeName' -n -t string -s 'Matcha-dark-azul
 # appearance >icons
 xfconf-query -c xsettings -p  '/Net/IconThemeName' -n -t string -s 'Papirus-Dark'
 
+# keyboard shortcuts
+# win + q  => clip board
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>q' -n -t string -s 'xfce4-clipman-history'
+# win + t  => terminal
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>t' -n -t string -s 'xfce4-terminal'
+# add taskmanager to ctrl+shift+esc 
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Primary><Shift>Escape' -n -t string -s 'xfce4-taskmanager'
+# add win+4 firefox pvt browsing
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>4' -n -t string -s 'firefox --private-window "youtube.com"'
+# add win+e file browser
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>e' -n -t string -s 'exo-open --launch FileManager'
+# add win+f open firefox
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>f' -n -t string -s '/usr/bin/firefox'
