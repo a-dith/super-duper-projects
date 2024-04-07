@@ -72,4 +72,12 @@ xfconf-query -c xfce4-panel -p /panels/panel-0/autohide-behavior -t uint -s 2
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Primary><Shift>Escape' -n -t string -s 'xfce4-taskmanager'
 # set terminal transparency
 xfconf-query -c xfce4-terminal -p /background-darkness -s .65
+# for dark theme
+# window manager > style
+xfconf-query -c xfwm4 -p  '/general/theme' -n -t string -s 'Matcha-dark-azul'
+# appearance >style
+xfconf-query -c xsettings -p  '/Net/ThemeName' -n -t string -s 'Matcha-dark-azul'
+# for icons 
+# appearance >icons
+xfconf-query -c xsettings -p  '/Net/IconThemeName' -n -t string -s 'Papirus-Dark'
 
