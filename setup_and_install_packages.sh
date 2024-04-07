@@ -71,5 +71,5 @@ xfconf-query -c xfce4-panel -p /panels/panel-0/autohide-behavior -t uint -s 2
 # add taskmanager to ctrl+shift+esc 
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Primary><Shift>Escape' -n -t string -s 'xfce4-taskmanager'
 # set terminal transparency
-
+xfconf-query -c xfce4-terminal -p /background-darkness -s .65
 
