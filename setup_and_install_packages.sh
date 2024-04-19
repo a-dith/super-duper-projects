@@ -55,15 +55,13 @@ wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/
 rm ~/piper*.gz
 
 # firefox dark reader
-firefox https://darkreader.org/
-# firefox OLED theme (dark)
-firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search"
+# firefox OLED theme (dark) 
 # online keyboard tester
-firefox "https://shawon9324.github.io/apps/keytester/"
+firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" "https://darkreader.org/" "https://shawon9324.github.io/apps/keytester/"
 
 
 # Xfce panel can be set to Always hidden with this command: 
-xfconf-query -c xfce4-panel -p /panels/panel-0/autohide-behavior -t uint -s 2 
+xfconf-query -c xfce4-panel -p /panels/panel-0/autohide-behavior -t uint -s 1
 # set terminal transparency
 xfconf-query -c xfce4-terminal -p /background-darkness -s .65
 # for dark theme
@@ -73,7 +71,7 @@ xfconf-query -c xfwm4 -p  '/general/theme' -n -t string -s 'Matcha-dark-azul'
 xfconf-query -c xsettings -p  '/Net/ThemeName' -n -t string -s 'Matcha-dark-azul'
 # for icons 
 # appearance >icons
-xfconf-query -c xsettings -p  '/Net/IconThemeName' -n -t string -s 'Papirus-Dark'
+xfconf-query -c xsettings -p  '/Net/IconThemeName' -n -t string -s 'Papirus-Dark-Maia'
 
 # keyboard shortcuts
 # win + q  => clip board
