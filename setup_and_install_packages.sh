@@ -88,8 +88,6 @@ xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>e' -n -t s
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>f' -n -t string -s '/usr/bin/firefox'
 # add whisker to windows alt+f1 (rectify win key after reset)
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Alt>F1' -n -t string -s '/usr/bin/xfce4-popup-whiskermenu'
-add whisker to windows alt+f1 (rectify win key after reset)
-xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Alt>F1' -n -t string -s '/usr/bin/xfce4-popup-whiskermenu'
 # add screenshot for custom area
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/Print' -n -t string -s 'xfce4-screenshooter -r'
 # add screenshot for active window
