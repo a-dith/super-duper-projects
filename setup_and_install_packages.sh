@@ -86,3 +86,15 @@ xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>4' -n -t s
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>e' -n -t string -s 'exo-open --launch FileManager'
 # add win+f open firefox
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>f' -n -t string -s '/usr/bin/firefox'
+# add whisker to windows alt+f1 (rectify win key after reset)
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Alt>F1' -n -t string -s '/usr/bin/xfce4-popup-whiskermenu'
+add whisker to windows alt+f1 (rectify win key after reset)
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Alt>F1' -n -t string -s '/usr/bin/xfce4-popup-whiskermenu'
+# add screenshot for custom area
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/Print' -n -t string -s 'xfce4-screenshooter -r'
+# add screenshot for active window
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Shift>Print' -n -t string -s 'xfce4-screenshooter -w'
+# add option for display settings
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>p' -n -t string -s 'xfce4-display-settings --minimal'
+# add ctrl+alt+del for logoff window
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Primary><Alt>Delete' -n -t string -s 'xfce4-session-logout'
