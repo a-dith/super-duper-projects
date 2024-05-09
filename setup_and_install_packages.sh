@@ -31,7 +31,7 @@ done
 
 echo "Package installation completed."
 
-cd ~
+cd $HOME
 # installing xtreme download manager
 echo "installing xtreme download manager..." && wget https://github.com/subhra74/xdm/releases/download/7.2.11/xdm-setup-7.2.11.tar.xz && tar xf xdm-setup-7.2.11.tar.xz && chmod a+x ./install.sh && su -c ./install.sh 
 rm xdm-se*.tar.xz readme.txt install.sh
@@ -39,9 +39,9 @@ rm xdm-se*.tar.xz readme.txt install.sh
 # install appimage manager
 wget https://raw.githubusercontent.com/ivan-hc/AM/main/INSTALL && chmod a+x ./INSTALL && sudo ./INSTALL
 
-# it is getting downloaded in the root folder so find a war to change it
+
 # installing piper tts
-cd ~
+cd $HOME
 echo "installing piper TTS..."
 wget https://github.com/rhasspy/piper/releases/download/v1.2.0/piper_amd64.tar.gz
 # extract (will be in piper folder)
@@ -52,7 +52,7 @@ cd piper/
 wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/medium/en_US-lessac-medium.onnx.json
 wget https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/lessac/medium/en_US-lessac-medium.onnx
 # remove the compressed file
-rm ~/piper*.gz
+rm $HOME/piper*.gz
 
 # firefox dark reader
 # firefox OLED theme (dark) 
@@ -64,6 +64,7 @@ firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?ut
 xfconf-query -c xfce4-panel -p /panels/panel-0/autohide-behavior -t uint -s 1
 # set terminal transparency
 xfconf-query -c xfce4-terminal -p /background-darkness -s .65
+
 # for dark theme
 # window manager > style
 xfconf-query -c xfwm4 -p  '/general/theme' -n -t string -s 'Matcha-dark-azul'
