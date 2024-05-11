@@ -57,7 +57,7 @@ rm $HOME/piper*.gz
 # firefox dark reader
 # firefox OLED theme (dark) 
 # online keyboard tester
-firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" "https://darkreader.org/" "https://shawon9324.github.io/apps/keytester/"
+firefox "https://addons.mozilla.org/en-US/firefox/addon/oled-with-red-accent/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" "https://darkreader.org/" "https://shawon9324.github.io/apps/keytester/" &
 
 
 # Xfce panel can be set to Always hidden with this command: 
