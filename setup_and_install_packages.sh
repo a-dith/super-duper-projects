@@ -76,18 +76,18 @@ xfconf-query -c xsettings -p  '/Net/ThemeName' -n -t string -s 'Matcha-dark-azul
 xfconf-query -c xsettings -p  '/Net/IconThemeName' -n -t string -s 'Papirus-Dark-Maia'
 
 # keyboard shortcuts
-# win + q  => clip board
-xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>q' -n -t string -s 'xfce4-clipman-history'
+# win + v  => clip board
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>v' -n -t string -s 'xfce4-clipman-history'
 # win + t  => terminal
-xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>t' -n -t string -s 'xfce4-terminal'
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>Return' -n -t string -s 'xfce4-terminal'
 # add taskmanager to ctrl+shift+esc 
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Primary><Shift>Escape' -n -t string -s 'xfce4-taskmanager'
 # add win+4 firefox pvt browsing
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>4' -n -t string -s 'firefox --private-window "youtube.com"'
 # add win+e file browser
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>e' -n -t string -s 'exo-open --launch FileManager'
-# add win+f open firefox
-xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>f' -n -t string -s '/usr/bin/firefox'
+# add win+b open firefox
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>b' -n -t string -s 'exo-open --launch WebBrowser'
 # add whisker to windows alt+f1 (rectify win key after reset)
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Alt>F1' -n -t string -s '/usr/bin/xfce4-popup-whiskermenu'
 # add screenshot for custom area
@@ -98,3 +98,5 @@ xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Shift>Print' -n 
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>p' -n -t string -s 'xfce4-display-settings --minimal'
 # add ctrl+alt+del for logoff window
 xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Primary><Alt>Delete' -n -t string -s 'xfce4-session-logout'
+# app finder using mac shortcut super space
+xfconf-query -c xfce4-keyboard-shortcuts -p  '/commands/custom/<Super>space' -n -t string -s 'xfce4-appfinder -c'
